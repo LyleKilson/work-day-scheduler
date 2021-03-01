@@ -1,4 +1,4 @@
-# Work Day Scheduler
+# Work Day Scheduler📆
 Third-Party APIs Challenge
 
 ## Discription 
@@ -11,7 +11,7 @@ A simple planner/calendar application that allows a user to save events for each
 * jQuery
 * Bootstrap
 * Moment.js
-* Iconic
+* Font Awesome
 
 ## Preview
 ![plot](./ScreenShot.png?raw=true "Preview")
@@ -19,4 +19,4 @@ A simple planner/calendar application that allows a user to save events for each
 https://LyleKilson.github.io/work-day-scheduler/
 
 ## Contribution
-Made with big 🧠 's by Kyle Wilson
+Made with Kyle Wilson's big 🧠 
