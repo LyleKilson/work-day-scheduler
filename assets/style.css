@@ -1,4 +1,10 @@
 body {
+<<<<<<< HEAD
+=======
+    margin: 10px;
+    border: 10px solid #000000;
+    border-radius: 15px;
+>>>>>>> develop
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
@@ -19,9 +25,21 @@ body {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+<<<<<<< HEAD
   }
   
   .description{
+=======
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+  
+  .container-fluid {
+    overflow-y: hidden;
+  }
+
+  .description {
+>>>>>>> develop
     white-space: pre-wrap;
   }
   
@@ -40,6 +58,10 @@ body {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
+<<<<<<< HEAD
+=======
+
+>>>>>>> develop
   }
   
   .past {
@@ -69,4 +91,12 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+<<<<<<< HEAD
   
+=======
+
+  footer {
+    margin-bottom: 2rem;
+    border-top: #000000 solid 10px;
+  }
+>>>>>>> develop
