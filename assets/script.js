@@ -13,9 +13,6 @@
  $("#4pm .description").val(localStorage.getItem("4pm"));
  $("#5pm .description").val(localStorage.getItem("5pm"));
 
- // WHEN I view the time blocks for that day 
- // THEN each time block is color-coded to indicate whether it is in the past, present, or future.
-
 $(document).ready(function() {
     // WHEN I open the planner THEN the current day is displayed at the top of the calendar
     var timeUpdate = function() {
@@ -24,21 +21,35 @@ $(document).ready(function() {
     };
     timeUpdate();
     setInterval(timeUpdate, 1000);
-
+    // WHEN I view the time blocks for that day 
+    // THEN each time block is color-coded to indicate whether it is in the past, present, or future.
     var colorCoder = function() {
         var presentTime = moment().hours();
 
-        
-
-         
+        $(".time-block").each(function() {
+        var timeBlock = parseInt($(this).attr("id")[1]);
+  
+        if (timeBlock < presentTime) {
+          $(this).addClass("past");
+        } 
+        else if (timeBlock === presentTime) {
+          $(this).addClass("present");
+        } 
+        else {
+          $(this).addClass("future");
+        }
+        console.log(timeBlock);
+      });   
     }
+    colorCoder();
+
     // WHEN I click the save button for that time block 
     // THEN the text for that event is saved in local storage
     $(".saveBtn").on("click", function() {
         var taskEntryTime = $(this).parent().attr("id");
         var taskEntryText = $(this).siblings(".description").val();
         localStorage.setItem(taskEntryTime, taskEntryText);
-        console.log(taskEntryTime , taskEntryText);
+        console.log(taskEntryTime, taskEntryText);
     });
 })
 
