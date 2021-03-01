@@ -14,7 +14,7 @@ A simple planner/calendar application that allows a user to save events for each
 * Iconic
 
 ## Preview
-![plot](./assets/ScreenShot.png?raw=true "Preview")
+![plot](./ScreenShot.png?raw=true "Preview")
 ## Website
 https://LyleKilson.github.io/work-day-scheduler/
 
